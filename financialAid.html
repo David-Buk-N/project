@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Documents</title>
+</head>
+<body>
+    <h1>View Documents</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Upload Date</th>
+                <th>Expiry Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for financialAid in financialAid %}
+            <tr>
+                <td>{{ fin_Aid.fin_id }}</td>
+                <td>{{ fin_Aid.fin_Name }}</td>
+                <td>{{ fin_Aid.fin_Description }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

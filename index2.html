@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Funding Form</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .radio-group {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Financial Assistance</h1>
+    <body>
+        <h1>Financial Assistance</h1>
+        <form method="POST"  enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            
+            <label for="student_number">{{ form.student_number.label }}</label>
+            {{ form.student_number(size=32) }}
+    
+            <label for="name">{{ form.name.label }}</label>
+            {{ form.name(size=32) }}
+    
+            <label for="surname">{{ form.surname.label }}</label>
+            {{ form.surname(size=32) }}
+    
+            <label for="gender">{{ form.gender.label }}</label>
+            {{ form.gender() }}
+    
+            <label for="contact_number">{{ form.contact_number.label }}</label>
+            {{ form.contact_number(size=32) }}
+    
+            <label for="student_email">{{ form.student_email.label }}</label>
+            {{ form.student_email(size=32) }}
+    
+            <label for="faculty">{{ form.faculty.label }}</label>
+            {{ form.faculty(size=32) }}
+    
+            <label for="id_copy">{{ form.id_copy.label }}</label>
+            {{ form.id_copy() }}
+    
+            <label for="registration_proof">{{ form.registration_proof.label }}</label>
+            {{ form.registration_proof() }}
+    
+            <label for="academic_record">{{ form.academic_record.label }}</label>
+            {{ form.academic_record() }}
+    
+            <label for="motivation">{{ form.motivation.label }}</label>
+            {{ form.motivation() }}
+    
+            <label for="financial_statement">{{ form.financial_statement.label }}</label>
+            {{ form.financial_statement() }}
+    
+            {{ form.submit() }}
+        </form>
+    </body>
+</body>
+</html>

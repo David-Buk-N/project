@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('file/Landing\ Page\ \(2\).png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Set the height to the viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+          color: #ffffff;
+        }
+          
+        .admin-panel {
+          text-align: center;
+          padding: 20px;
+          background-color: rgba(0, 0, 0, 0.8);
+          border-radius: 10px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          margin-top: -211px; /* Add margin to create space between buttons and panel */
+          width: 50%;
+        }
+         
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0074d9;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+     <div class="admin-panel">
+        <h1>Welcome!</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar"
+             >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <div class="navbar-nav">
+              </div>
+            </div>
+          </nav>
+
+        <button id="addButton">Student</button>
+        <button id="addButton">Admin</button>
+        <button id="addButton">Donor</button>
+     </div>
+
+     {%for %}
+
+     <script src="script.js"></script>
+</body>
+</html>
